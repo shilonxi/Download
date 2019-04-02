@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/download_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.download.download_activity">
+    <!--线性垂直布局-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载地址："
+        android:textSize="20dp"
+        android:textColor="#f45106" />
+    <!--注释-->
+
+    <EditText
+        android:id="@+id/url_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请填入有效地址！"
+        android:textSize="18dp"
+        android:textColor="#000000" />
+    <!--下载地址自选-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="目标地址："
+        android:textSize="20dp"
+        android:textColor="#f45106" />
+    <!--注释-->
+
+    <EditText
+        android:id="@+id/target_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/mnt/sdcard/"
+        android:textSize="18dp"
+        android:textColor="#000000" />
+    <!--目标地址位于根目录下-->
+
+    <Button
+        android:id="@+id/down_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="download"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:background="#f45106" />
+    <!--下载按钮-->
+
+    <ProgressBar
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:paddingTop="10dp"
+        style="?android:attr/progressBarStyleHorizontal" />
+    <!--水平进度条，显示下载进度-->
+
+    <Button
+        android:id="@+id/play_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:background="#f45106"
+        android:layout_marginTop="10dp" />
+    <!--播放按钮-->
+
+    <Button
+        android:id="@+id/pause_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:background="#f45106"
+        android:layout_marginTop="10dp" />
+    <!--暂停按钮-->
+
+    <Button
+        android:id="@+id/stop_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        android:background="#f45106"
+        android:layout_marginTop="10dp" />
+    <!--停止按钮-->
+
+</LinearLayout>
+
